@@ -1,5 +1,5 @@
 CXX=g++
-CFLAGS = -std=c++17 -Wall
+CFLAGS = -std=c++14 -Wall
 CFLAGS += -I./inc/ -I/usr/include/mysql
 CFLAGS += -L/usr/local/lib
 TARGET= server.out
