@@ -12,6 +12,12 @@ Concurrency test : Apache benchtest
 
 ![image](https://github.com/KevinHeish/WebServer/blob/main/others/ApacheBenchtest.JPG)
 
+## Environment  
+MySQL DB  
+Ubuntu 18.04  
+C++14 supported compiler  
+
+
 ## Build  
 Compiler optimize build  
 ```
@@ -26,7 +32,14 @@ lib.so for test code use
 make lib
 ```
 
+## ToDo  
+- [ ] More test code
+- [ ] Try Doublely Linked list in Timer update
+- [ ] Put and Delete method
+- [ ] Save login state
 
-# Reference  
+
+# Reference and Acknowledgement  
+
 https://github.com/qinguoyi/TinyWebServer  
 https://github.com/markparticle/WebServer
