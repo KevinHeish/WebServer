@@ -18,4 +18,5 @@ jobs:
     - name: Run container
       run: docker run -v $PWD:/data  local
     - name: build code
-      run: ls -al;  cd data; make 
+      run: ls -al;
+    - name: bazel build //...
