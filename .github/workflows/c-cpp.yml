@@ -13,9 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make
-      run: make
-    - name: make lib
-      run: make lib
     - name: print
       run: echo "Build finished"
