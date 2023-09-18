@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: make
-      run: make
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag bazel:$(date +%s)
+    - name: print
+      run: echo "hello"
