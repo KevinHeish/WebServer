@@ -10,4 +10,4 @@ RUN tar -xf clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz
 RUN ln -s $(pwd)/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04 /usr/local/llvm
 RUN echo "LLVM_HOME=/usr/local/llvm" >> ~/.bashrc
 ENV PATH="${PATH}:/usr/local/llvm/bin"
-echo "Build Done"
+RUN echo "Build Done"
