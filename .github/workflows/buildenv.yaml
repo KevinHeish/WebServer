@@ -14,8 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag bazel:$(date +%s)
+      run: docker build . --file Dockerfile --tag local
     - name: Run container
-      run: docker run -it -v $PWD:/data 
+      run: docker run -it -v $PWD:/data  local
     - name: build code
       run: ls -al;  cd data; make 
