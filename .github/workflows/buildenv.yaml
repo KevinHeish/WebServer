@@ -16,6 +16,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag local
     - name: Run container
-      run: docker run -it -v $PWD:/data  local
+      run: docker run -v $PWD:/data  local
     - name: build code
       run: ls -al;  cd data; make 
