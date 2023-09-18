@@ -17,6 +17,7 @@ jobs:
       run: docker build . --file Dockerfile --tag local
     - name: Run container
       run: docker run -v $PWD:/data  local
-    - name: build code
+    - name: list dir
       run: ls -al;
-    - name: bazel build //...
+    - name: build code
+      run: bazel build //...
